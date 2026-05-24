@@ -7,8 +7,8 @@ function TimerChallenge({ title, targetTime }) {
   const [timerExpired, setTimerExpired] = useState(false);
 
   function handleStart() {
-    timer.current = setTimerStarted(true);
-    setTimeout(() => {
+    setTimerStarted(true);
+    timer.current = setTimeout(() => {
       setTimerExpired(true);
     }, targetTime * 1000);
   }
