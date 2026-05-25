@@ -31,7 +31,7 @@ function TimerChallenge({ title, targetTime }) {
         </p>
         <p>
           <button onClick={timerStarted ? handleStop : handleStart}>
-            {timerStarted ? "Start" : "Stop"} Challenge
+            {timerStarted ? "Stop" : "Start"} Challenge
           </button>
         </p>
         <p className={timerStarted ? "active" : undefined}>
